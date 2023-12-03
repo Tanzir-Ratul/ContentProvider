@@ -29,7 +29,7 @@ class CallLogActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_call_log)
 
-        listview = findViewById<ListView>(R.id.listView)
+        listview = findViewById(R.id.listView)
         runtimePermission()
     }
 
