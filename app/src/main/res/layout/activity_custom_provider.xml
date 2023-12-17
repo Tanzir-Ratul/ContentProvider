@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CustomProvider">
+
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/meaningET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Meaning"
+            app:layout_constraintStart_toStartOf="@+id/nameET"
+            app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="239dp"
+            android:text="Next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/prevBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginBottom="6dp"
+            android:text="Previous"
+            app:layout_constraintBottom_toBottomOf="@+id/nextBtn"
+            app:layout_constraintStart_toEndOf="@+id/nextBtn" />
+
+        <Button
+            android:id="@+id/insertBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:text="Insert"
+            app:layout_constraintBaseline_toBaselineOf="@+id/prevBtn"
+            app:layout_constraintStart_toEndOf="@+id/prevBtn" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:text="update"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/insertBtn" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="9dp"
+            android:text="Delete"
+            app:layout_constraintBottom_toBottomOf="@+id/updateBtn"
+            app:layout_constraintStart_toEndOf="@+id/updateBtn" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="2dp"
+            android:text="Clear"
+            app:layout_constraintStart_toEndOf="@+id/deleteBtn"
+            app:layout_constraintTop_toTopOf="@+id/deleteBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
